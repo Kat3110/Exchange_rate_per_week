@@ -9,8 +9,6 @@
         prepend-icon="mdi-currency-rub"></v-switch>
     </v-app-bar>
 
-
-
     <v-main>
       <div class="d-flex mt-10" v-if="isLoading === true">
         <v-spacer></v-spacer>
@@ -31,7 +29,7 @@
                 {{ currency.Nominal }} {{ currency.Name }}
               </p>
             </div>
-            <v-btn color="#2196f3" text @click="openPopup(currency.CharCode)">
+            <v-btn title='button' color="#2196f3" text @click="openPopup(currency.CharCode)">
               <v-icon large>
                 mdi-chart-timeline-variant-shimmer
               </v-icon>
@@ -70,16 +68,13 @@
                   %
                 </div>
               </div>
-
-
             </div>
           </div>
-
         </v-card>
         <v-dialog v-model="dialog" persistent max-width="600">
           <v-card>
             <div class="d-flex align-center">
-              <v-btn color="primary" text @click="dialog = false">
+              <v-btn title='button' color="primary" text @click="dialog = false">
                 <v-icon>mdi-window-close</v-icon>
               </v-btn>
               <div class="text-body-1 font-weight-thin text-center text-sm-h6">
