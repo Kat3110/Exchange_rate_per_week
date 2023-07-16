@@ -1,11 +1,11 @@
 <template>
   <v-app>
     <v-app-bar app v-if="isLoading === false">
-      <v-switch v-model="$vuetify.theme.dark" hide-details="false" inset prepend-icon="mdi-theme-light-dark"></v-switch>
+      <v-switch type="checkbox" v-model="$vuetify.theme.dark" hide-details="false" inset prepend-icon="mdi-theme-light-dark"></v-switch>
       <v-spacer></v-spacer>
-      <v-switch v-if="isPercent === true" v-model="isPercent" hide-details="false" inset
+      <v-switch type="checkbox" v-if="isPercent === true" v-model="isPercent" hide-details="false" inset
         prepend-icon="mdi-percent-outline"></v-switch>
-      <v-switch v-if="isPercent === false" v-model="isPercent" hide-details="false" inset
+      <v-switch type="checkbox" v-if="isPercent === false" v-model="isPercent" hide-details="false" inset
         prepend-icon="mdi-currency-rub"></v-switch>
     </v-app-bar>
 
