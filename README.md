@@ -1,4 +1,4 @@
-# [Курс рубля ЦБ РФ](exchange-rate-per-week.vercel.app)
+# [Курс рубля ЦБ РФ](https://exchange-rate-per-week.vercel.app)
 
 ## О проекте:
 
